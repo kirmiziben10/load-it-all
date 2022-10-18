@@ -7,13 +7,15 @@ int percentage, barLenght;
 
 int main()
 {
+    // These are for POC(Proof of Concept) purposes
     printf("Enter the percentage:");
     scanf("%d", &percentage);
     printf("Enter the bar lenght:");
     scanf("%d", &barLenght);
+    
     for (int i = 0; i < 100; i++)
     {
-        loadingBar(i,barLenght);
+        loadingBar(i,barLenght);// Where it actually calls it
         delay(100);
     }
 
